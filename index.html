@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎄 Feliz Natal ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="musica" loop>
+    <source src="natal.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container" id="tela1">
+    <h1 id="texto"></h1>
+    <button onclick="pergunta()">Clique aqui 💖</button>
+</div>
+
+<div class="container hidden" id="tela2">
+    <h1>Você me ama de verdade? 🥺</h1>
+    <button onclick="sim()">SIM</button>
+    <button onclick="nao()">NÃO</button>
+</div>
+
+<div class="container hidden" id="telaZoacao">
+    <h1>😏 EU SABIA 😏</h1>
+    <button onclick="final()">Clique aqui de verdade agora 💝</button>
+</div>
+
+<div class="container hidden" id="telaNao">
+    <h1>Não minta pra você, bebê 😌</h1>
+    <img src="imagem/img.jpg" alt="imagem">
+    <button onclick="volta()">Me ama sim ou sim? 😁 </button>
+</div>
+
+<div class="container hidden" id="telaFinal">
+    <h1>🎄 Feliz Natal, meu amor ❤️</h1>
+    <p>Que nosso amor seja quente como o Ceará 🔥</p>
+</div>
+
+
+
+<script src="script.js"></script>
+
+<!-- Snowstorm.js para neve -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Snowstorm/20131208/snowstorm.js"></script>
+<script>
+    // Configurações opcionais da neve
+    snowStorm.snowColor = '#ffffff';       // cor dos flocos
+    snowStorm.flakesMaxActive = 300;        // quantidade máxima de flocos
+    snowStorm.useTwinkleEffect = true;     // flocos piscam
+    snowStorm.flakesMaxSize = 5; // tamanho máximo
+    snowStorm.flakesMaxSpeed = 10; // padrão é 5
+    snowStorm.flakesMinSpeed = 1; // velocidade mínima
+</script>
+
+</body>
+</html>
